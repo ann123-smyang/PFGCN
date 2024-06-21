@@ -1,0 +1,51 @@
+{
+  "name": "deepgo-copy",
+  "version": "1.0.0",
+  "DATA_ROOT":"D:\\科研论文\\论文收集\\研究生-图神经网络在医学图形\\deepgo-master\\data\\train\\",
+  "function":"mf",
+  "device": "cuda",
+  "outfile_protain": "D:\科研论文\论文收集\研究生-图神经网络在医学图形\\\\GCNgo-master\\data\\protein.fasta",
+  "addaptadj": true,
+  "MAXLEN":1000,
+  "batch_size":128,
+  "epochs":50,
+  "fine_tune_epochs": 1,
+  "lr":0.001,
+  "l1_lambda": 0.01,
+  "weight_decay":0.0001,
+  "transformer": {
+    "in_channels":512,
+    "out_channels": 512
+  },
+  "Feature": {
+    "max_features":8001 ,
+    "embedding_dims":128
+  },
+  "GoFeature": {
+    "in_features": 1256,
+    "classes": 589,
+    "out_channels": 16
+  },
+  "FunctionAttention": {
+    "in_channels":32,
+    "hid_channels": 16,
+    "out_channels": 16
+  },
+   "ProteinAttention": {
+    "in_channels":32,
+    "hid_channels": 16,
+    "out_channels": 32
+  },
+    "FunctionConv": {
+    "K": 2,
+    "in_channels": 32,
+    "out_channels": 32
+  },
+  "ProteinConv": {
+    "K": 2,
+    "in_channels": 32,
+    "out_channels": 32
+  },
+  "go_path":"D:\\科研论文\\论文收集\\研究生-图神经网络在医学图形\\deepgo-master\\data\\go.obo",
+  "nb_classes": 589
+}

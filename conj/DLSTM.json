@@ -1,0 +1,22 @@
+{
+  "name": "deepgo-copy",
+  "version": "1.0.0",
+  "DATA_ROOT":"D:\\科研论文\\论文收集\\研究生-图神经网络在医学图形\\deepgo-master\\data\\train\\",
+  "function":"cc",
+  "device": "cuda",
+  "outfile_protain": "D:\\科研论文\\论文收集\\研究生-图神经网络在医学图形\\\\GCNgo-master\\data\\protein.fasta",
+  "addaptadj": true,
+  "MAXLEN":1000,
+  "batch_size":128,
+  "epochs":30,
+  "fine_tune_epochs": 1,
+  "lr":0.001,
+  "l1_lambda": 0.01,
+  "weight_decay":0.0001,
+  "input_size":1000,
+  "hidden_size1": 256,
+  "hidden_size2": 21,
+  "num_layers": 1,
+  "go_path":"D:\\科研论文\\论文收集\\研究生-图神经网络在医学图形\\deepgo-master\\data\\go.obo",
+  "nb_classes": 589
+}
